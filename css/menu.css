@@ -72,6 +72,9 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important; } }
 
+body {
+  font: 16px/1.5 sans-serif; }
+
 button,
 .button,
 a.button {
@@ -94,12 +97,12 @@ a.ghost {
   .main-menu-toggle::before {
     display: block;
     content: "";
-    background: transparent url("../../media/iconography/menu-open.svg") 0 0 no-repeat;
+    background: transparent url("../media/iconography/menu-open.svg") 0 0 no-repeat;
     background-size: 18px 12px;
     width: 18px;
     height: 12px; }
   .main-menu-toggle.expanded::before {
-    background-image: url("../../media/iconography/menu-close.svg"); }
+    background-image: url("../media/iconography/menu-close.svg"); }
   @media all and (min-width: 47.9385em) {
     .main-menu-toggle {
       display: none; } }
