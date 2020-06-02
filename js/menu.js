@@ -20,7 +20,7 @@
   function hideSubMenuItems(subnavList) {
     Array.from(subnavList).forEach((element) => {
       element.classList.add("hidden");
-      element.setAttribute("aria-expanded", false);
+      element.previousElementSibling.setAttribute("aria-expanded", false);
     });
   }
 
@@ -57,9 +57,9 @@
       } else if (target.classList.contains("top-level-entry")) {
         const subnav = target.nextElementSibling;
         if (subnav) {
-          const ariaExpandedState = subnav.getAttribute("aria-expanded");
+          const ariaExpandedState = target.getAttribute("aria-expanded");
           subnav.classList.toggle("hidden");
-          subnav.setAttribute(
+          target.setAttribute(
             "aria-expanded",
             ariaExpandedState === "true" ? false : true
           );
