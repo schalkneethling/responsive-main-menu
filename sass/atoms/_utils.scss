@@ -3,7 +3,12 @@
 }
 
 .show {
-  display: block;
+  display: flex;
+  flex-flow: column;
+
+  @media #{$mq-tablet-and-up} {
+    flex-flow: row;
+  }
 }
 
 .visually-hidden {
