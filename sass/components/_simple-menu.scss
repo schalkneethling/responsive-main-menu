@@ -26,7 +26,7 @@
       }
     }
 
-    &[aria-current] {
+    &[aria-current="page"] {
       border-bottom: 2px solid #333;
       font-weight: bold;
     }
