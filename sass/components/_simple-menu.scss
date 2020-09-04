@@ -25,5 +25,10 @@
         color: $primary-100;
       }
     }
+
+    &[aria-current] {
+      border-bottom: 2px solid #333;
+      font-weight: bold;
+    }
   }
 }

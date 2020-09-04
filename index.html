@@ -12,8 +12,8 @@
         <header class="site-header">
                 <nav id="main-nav-container" class="main-nav" aria-label="Main menu">
                         <button type="button" id="main-menu-toggle"
-                                class="ghost main-menu-toggle" aria-haspopup="true"
-                                aria-label="Show Menu">
+                                class="ghost main-menu-toggle" aria-expanded="false"
+                                aria-controls="main-menu" aria-label="Show Menu">
                         </button>
                         <ul id="main-menu" class="main-menu">
                                 <li class="top-level-entry-container">
@@ -21,59 +21,59 @@
                                                 aria-current="page">Home</a>
                                 </li>
                                 <li class="top-level-entry-container"><button
-                                                id="technologyButton"
-                                                type="button"
+                                                id="technologyButton" type="button"
                                                 class="ghost top-level-entry"
                                                 aria-haspopup="menu"
                                                 aria-expanded="false">Technologies</button>
-                                        <ul class="subnav" role="menu" aria-labelledby="technologyButton">
-                                                <li data-item="Technologies"
-                                                        role="none"><a role="menuitem"
+                                        <ul class="subnav" role="menu"
+                                                aria-labelledby="technologyButton">
+                                                <li data-item="Technologies" role="none">
+                                                        <a role="menuitem"
                                                                 href="/en-US/docs/Web">Technologies
                                                                 Overview</a></li>
-                                                <li data-item="Technologies"
-                                                        role="none"><a role="menuitem"
+                                                <li data-item="Technologies" role="none">
+                                                        <a role="menuitem"
                                                                 href="/en-US/docs/Web/HTML">HTML</a>
                                                 </li>
-                                                <li data-item="Technologies"
-                                                        role="none"><a role="menuitem"
+                                                <li data-item="Technologies" role="none">
+                                                        <a role="menuitem"
                                                                 href="/en-US/docs/Web/CSS">CSS</a>
                                                 </li>
-                                                <li data-item="Technologies"
-                                                        role="none"><a role="menuitem"
+                                                <li data-item="Technologies" role="none">
+                                                        <a role="menuitem"
                                                                 href="/en-US/docs/Web/JavaScript">JavaScript</a>
                                                 </li>
-                                                <li data-item="Technologies"
-                                                        role="none"><a role="menuitem"
+                                                <li data-item="Technologies" role="none">
+                                                        <a role="menuitem"
                                                                 href="/en-US/docs/Web/Guide/Graphics">Graphics</a>
                                                 </li>
-                                                <li data-item="Technologies"
-                                                        role="none"><a role="menuitem"
+                                                <li data-item="Technologies" role="none">
+                                                        <a role="menuitem"
                                                                 href="/en-US/docs/Web/HTTP">HTTP</a>
                                                 </li>
-                                                <li data-item="Technologies"
-                                                        role="none"><a role="menuitem"
+                                                <li data-item="Technologies" role="none">
+                                                        <a role="menuitem"
                                                                 href="/en-US/docs/Web/API">APIs
                                                                 / DOM</a></li>
-                                                <li data-item="Technologies"
-                                                        role="none"><a role="menuitem"
+                                                <li data-item="Technologies" role="none">
+                                                        <a role="menuitem"
                                                                 href="/en-US/docs/Mozilla/Add-ons/WebExtensions">Browser
                                                                 Extensions</a></li>
-                                                <li data-item="Technologies"
-                                                        role="none"><a role="menuitem"
+                                                <li data-item="Technologies" role="none">
+                                                        <a role="menuitem"
                                                                 href="/en-US/docs/Web/MathML">MathML</a>
                                                 </li>
                                         </ul>
                                 </li>
                                 <li class="top-level-entry-container"><button
-                                                id="referencesButton"
-                                                type="button"
+                                                id="referencesButton" type="button"
                                                 class="ghost top-level-entry"
                                                 aria-haspopup="menu"
                                                 aria-expanded="false">References
                                                 &amp;
                                                 Guides</button>
-                                        <ul class="subnav" role="menu" aria-labelledby="referencesButton">
+                                        <ul class="subnav" role="menu"
+                                                aria-labelledby="referencesButton">
                                                 <li data-item="References &amp; Guides"
                                                         role="none"><a role="menuitem"
                                                                 href="/en-US/docs/Learn">Learn
@@ -105,12 +105,12 @@
                                         </ul>
                                 </li>
                                 <li class="top-level-entry-container"><button
-                                                id="feedbackButton"
-                                                type="button"
+                                                id="feedbackButton" type="button"
                                                 class="ghost top-level-entry"
                                                 aria-haspopup="menu"
                                                 aria-expanded="false">Feedback</button>
-                                        <ul class="subnav" role="menu" aria-labelledby="feedbackButton">
+                                        <ul class="subnav" role="menu"
+                                                aria-labelledby="feedbackButton">
                                                 <li data-item="Feedback" role="none">
                                                         <a role="menuitem"
                                                                 href="/en-US/docs/MDN/Feedback">Send
