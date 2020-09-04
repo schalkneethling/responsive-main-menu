@@ -24,6 +24,15 @@
     });
   }
 
+  /**
+   * Toggles the state of the attribute between true and false
+   * @param {String} attribute - name of the attribute which state to toggle
+   */
+  function toggleAttributeState(attribute) {
+    const nextState = this.getAttribute(attribute) === "true" ? false : true;
+    this.setAttribute(attribute, nextState);
+  }
+
   if (mainNavContainer) {
     const mainMenuToggle = document.getElementById("main-menu-toggle");
     const subnavList = mainNavContainer.querySelectorAll(".subnav");
@@ -51,6 +60,7 @@
 
       if (target.classList.contains("main-menu-toggle")) {
         setAccessibleName(mainMenuToggle);
+        toggleAttributeState.call(mainMenuToggle, "aria-expanded");
 
         mainMenu.classList.toggle("show");
         mainMenuToggle.classList.toggle("expanded");
