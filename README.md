@@ -1,8 +1,2 @@
 # responsive-main-menu
-
-Basis for a responsive, accessible, main menu
-
-### Implementation resources
-
-- [Web Accessibility Menu Concepts](https://www.w3.org/WAI/tutorials/menus/)
-- [WAI-ARIA Authoring Practices](https://www.w3.org/TR/wai-aria-practices/#menu)
+This project has been moved into the larger web-accessibility project at https://github.com/schalkneethling/web-accessibility
